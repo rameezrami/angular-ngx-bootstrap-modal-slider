@@ -1,0 +1,20 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{ title }}</h4>
+  <button
+    type="button"
+    class="btn-close close pull-right"
+    aria-label="Close"
+    (click)="closeModal()"
+  >
+    <span aria-hidden="true" class="visually-hidden">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div
+    *ngFor="let n of [].constructor(100)"
+    class="alert alert-primary"
+    role="alert"
+  >
+    A simple primary alert—check it out!
+  </div>
+</div>

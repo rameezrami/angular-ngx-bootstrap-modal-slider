@@ -1,0 +1,58 @@
+.modal {
+  &.fade {
+    .modal-dialog {
+      &.modal-slider {
+        &.right {
+          -webkit-transform: translate(100%, 0) scale(1);
+          transform: translate(100%, 0) scale(1);
+        }
+        &.left {
+          -webkit-transform: translate(100%, 0) scale(1);
+          transform: translate(-100%, 0) scale(1);
+        }
+      }
+    }
+    &.show {
+      .modal-dialog {
+        &.modal-slider {
+          &.right {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+          }
+          &.left {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+          }
+        }
+      }
+    }
+  }
+  .modal-dialog {
+    &.modal-slider {
+      background: #ffffff;
+      position: fixed;
+      top: 0;
+      min-width: 453px;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      &.right {
+        right: 0;
+      }
+      &.left {
+        left: 0;
+      }
+      .modal-content {
+        height: 100vh;
+        .modal-body {
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
